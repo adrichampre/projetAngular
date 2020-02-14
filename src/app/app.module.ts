@@ -3,16 +3,57 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SingleTeamComponent } from './team-list/single-team/single-team.component';
+import { TeamListComponent } from './team-list/team-list.component';
+import { HeaderComponent } from './header/header.component';
+import {AuthService} from './services/auth.service';
+import {TeamsService} from './services/teams.service';
+import {AuthGuardService} from './services/auth-guard.service';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {RouterModule, Routes} from '@angular/router';
+import { PlayerListComponent } from './player-list/player-list.component';
+import { SinglePlayerComponent } from './player-list/single-player/single-player.component';
+import {PlayersService} from './services/players.service';
+
+const appRoutes: Routes = [
+  {path: 'auth/signup', component: SignupComponent},
+  {path: 'auth/signin', component: SigninComponent},
+  {path: 'teams', component: TeamListComponent},
+  {path: 'teams/view/:id', component: SingleTeamComponent},
+  {path: 'players', canActivate: [AuthGuardService], component: PlayerListComponent},
+  {path: 'players/view/:id', canActivate: [AuthGuardService], component: SinglePlayerComponent},
+  {path: '', redirectTo: 'players', pathMatch: 'full'},
+  {path: '**', redirectTo: 'players'}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignupComponent,
+    SigninComponent,
+    SingleTeamComponent,
+    TeamListComponent,
+    HeaderComponent,
+    PlayerListComponent,
+    SinglePlayerComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    TeamsService,
+    PlayersService,
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
