@@ -17,7 +17,7 @@ export class PlayersService {
   }
 
   getPlayers() {
-    firebase.database().ref('/')
+    firebase.database().ref('/players')
       .on('value', (data) => {
         this.players = data.val() ? data.val() : [];
         this.emitPlayers();
@@ -27,7 +27,23 @@ export class PlayersService {
   getSinglePlayer(id: number) {
     return new Promise(
       ((resolve, reject) => {
-        firebase.database().ref('/' + id).once('value').then(
+        firebase.database().ref('/players/' +  id.toString()).once('value').then(
+          (data) => {
+            resolve(data.val());
+          },
+          (error) => {
+            reject(error);
+          }
+        );
+      })
+    );
+  }
+
+  getAttributesPlayer(id: number)
+  {
+    return new Promise(
+      ((resolve, reject) => {
+        firebase.database().ref('/player_attributes/' +  id.toString()).once('value').then(
           (data) => {
             resolve(data.val());
           },

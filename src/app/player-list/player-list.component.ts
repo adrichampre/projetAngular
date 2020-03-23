@@ -27,7 +27,7 @@ export class PlayerListComponent implements OnInit, OnDestroy {
   }
 
   onViewPlayer(id: number) {
-    this.router.navigate(['/players', 'view', id]);
+    this.router.navigate(['/players', 'view', id - 1]);
   }
 
   ngOnDestroy() {

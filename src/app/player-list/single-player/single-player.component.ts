@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../../models/player.model';
+import { Player_attributes } from "../../models/player_attributes";
 import {ActivatedRoute, Router} from '@angular/router';
 import {PlayersService} from '../../services/players.service';
 
@@ -17,11 +18,15 @@ export class SinglePlayerComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-    this.player = new Player(null, '');
-    const id = this.route.snapshot.params['id'];
-    this.playersService.getSinglePlayer(+id).then(
+    const id = this.route.snapshot.params.id;
+    this.playersService.getSinglePlayer(id).then(
       (player: Player) => {
         this.player = player;
+      }
+    );
+    this.playersService.getAttributesPlayer(id).then(
+      (player_attributes: Player_attributes) => {
+        this.player.attributes = player_attributes;
       }
     );
   }
