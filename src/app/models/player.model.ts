@@ -1,4 +1,7 @@
 import {Player_attributes} from './player_attributes';
+import {isEmpty} from 'rxjs/operators';
+import {isEmptyExpression} from '@angular/compiler';
+import {isNullOrUndefined} from 'util';
 
 export class Player {
 
@@ -11,25 +14,33 @@ export class Player {
   private _player_api_id: number;
   private _player_fifa_api_id: number;
   private _weight: number;
+  private _img: string;
+  private _age: number;
 
-  constructor(id: number, player_name: string, birthday: Date, height: number, player_api_id: number, player_fifa_api_id: number, weight: number) {
+
+  constructor(id: number) {
     this._id = id;
+  }
+
+  /*constructor(id: number, player_name: string, birthday: Date, height: number, player_api_id: number, player_fifa_api_id: number, weight: number) {
+    /*this._id = id;
     this._player_name = player_name;
     this._birthday = birthday;
     this._height = height;
     this._player_api_id = player_api_id;
     this._player_fifa_api_id = player_fifa_api_id;
     this._weight = weight;
-  }
+    this._img = "https://svgsilh.com/svg_v2/2130591.svg";
+  }*/
 
-
-  public get attributes(): Player_attributes {
+  get attributes(): Player_attributes {
     return this._attributes;
   }
 
-  public set attributes(value: Player_attributes) {
+  set attributes(value: Player_attributes) {
     this._attributes = value;
   }
+
   get id(): number {
     return this._id;
   }
@@ -84,6 +95,27 @@ export class Player {
 
   set weight(value: number) {
     this._weight = value;
+  }
+
+  get img(): string {
+    return this._img;
+  }
+
+  set img(value: string) {
+
+    if (isNullOrUndefined(value) || value.length < 15) {
+      this._img = 'https://svgsilh.com/svg_v2/2130591.svg';
+    } else {
+      this._img = value;
+    }
+  }
+
+  get age(): number {
+    return this._age;
+  }
+
+  set age(value: number) {
+    this._age = value;
   }
 
 }

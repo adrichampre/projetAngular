@@ -25,6 +25,7 @@ export class PlayersService {
   }
 
   getSinglePlayer(id: number) {
+    /*return this.players[id - 1];*/
     return new Promise(
       ((resolve, reject) => {
         firebase.database().ref('/players/' +  id.toString()).once('value').then(
@@ -39,8 +40,7 @@ export class PlayersService {
     );
   }
 
-  getAttributesPlayer(id: number)
-  {
+  getAttributesPlayer(id: number) {
     return new Promise(
       ((resolve, reject) => {
         firebase.database().ref('/player_attributes/' +  id.toString()).once('value').then(

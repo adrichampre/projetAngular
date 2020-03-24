@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { Player } from '../../models/player.model';
-import { Player_attributes } from "../../models/player_attributes";
+import { Player_attributes } from '../../models/player_attributes';
 import {ActivatedRoute, Router} from '@angular/router';
 import {PlayersService} from '../../services/players.service';
+import {isNullOrUndefined} from 'util';
+import {isEmpty} from 'rxjs/operators';
 
 @Component({
   selector: 'app-single-player',
@@ -11,20 +13,32 @@ import {PlayersService} from '../../services/players.service';
 })
 export class SinglePlayerComponent implements OnInit {
 
+
   player: Player;
+  disposition = 1;
 
   constructor(private route: ActivatedRoute,
               private playersService: PlayersService,
-              private router: Router) { }
+              private router: Router) {}
 
   ngOnInit() {
     const id = this.route.snapshot.params.id;
-    this.playersService.getSinglePlayer(id).then(
+    this.player = new Player(id + 1);
+
+    this.playersService.getSinglePlayer(+id).then(
       (player: Player) => {
         this.player = player;
+        if (isNullOrUndefined(this.player.img) || this.player.img.length < 15) {
+          this.player.img = 'https://svgsilh.com/svg_v2/2130591.svg';
+        }
+        this.player.age = Math.floor((new Date().getTime() - new Date(this.player.birthday).getTime()) / (365.24 * 24 * 3600 * 1000));
+        this.player.weight = +(this.player.weight / 2.2046).toFixed(1);
+        this.player.height = +(this.player.height / 100).toFixed(2);
       }
     );
-    this.playersService.getAttributesPlayer(id).then(
+
+    this.playersService.getAttributesPlayer(+id).then(
+      // tslint:disable-next-line:variable-name
       (player_attributes: Player_attributes) => {
         this.player.attributes = player_attributes;
       }
@@ -33,6 +47,18 @@ export class SinglePlayerComponent implements OnInit {
 
   onBack() {
     this.router.navigate(['/players']);
+  }
+
+  onButton(num: number) {
+    this.disposition = num;
+  }
+
+  getColor(num: number) {
+    let res = '#5bc0de';
+    if (this.disposition === num) {
+      res = '#269abc';
+    }
+    return res;
   }
 
 }
