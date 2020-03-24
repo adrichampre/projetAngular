@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="menuPlayer">
   <div class="col-xs-3">
     <button class="btn btn-default" (click)="onBack()"><i class="glyphicon glyphicon-arrow-left"></i> Retour</button>
   </div>
@@ -10,36 +10,64 @@
     </div>
   </div>
 </div>
-<div class="row">
+
+<!-- HEADER PLAYER -->
+<div class="row" id="headerPlayer">
   <div class="col-xs-2">
     <img class="img-thumbnail" src="{{player.img}}"/>
   </div>
   <div class="col-xs-10 text-center">
     <h1>{{player.player_name}}</h1>
-    <div class="row">
+    <div class="row contentHeaderPlayer">
       <div class="col-xs-2">
-        <h4>ID : {{player.id}}</h4>
+        <label>ID : {{player.id}}</label>
       </div>
       <div class="col-xs-4">
-        <h4>Age : {{player.age}} ans ({{player.birthday | date: 'd MMMM y'}})</h4>
+        <label>Age : {{player.age}} ans ({{player.birthday | date: 'd MMMM y'}})</label>
       </div>
       <div class="col-xs-3">
-        <h4>Taille : {{player.height}} m</h4>
+        <label>Taille : {{player.height}} m</label>
       </div>
       <div class="col-xs-3">
-        <h4>Poids : {{player.weight}} kg</h4>
+        <label>Poids : {{player.weight}} kg</label>
+      </div>
+    </div>
+
+    <div class="row contentHeaderPlayer">
+      <div class="col-xs-offset-1 col-xs-1 img-rounded note"
+           [ngStyle]="{backgroundColor: getColorStats(player.attributes.overall_rating)}">
+        <b>{{player.attributes.overall_rating}}</b>
+      </div>
+      <div class="col-xs-3 textNote" >
+        <b>Note globale</b>
+      </div>
+      <div class="col-xs-offset-2 col-xs-1 img-rounded note"
+           [ngStyle]="{backgroundColor: getColorStats(player.attributes.potential)}">
+        <b>{{player.attributes.potential}}</b>
+      </div>
+      <div class="col-xs-3 textNote">
+        <b>Potentiel</b>
       </div>
     </div>
   </div>
 </div>
-<div class="row"
-      *ngIf="disposition === 1">
+
+
+<!-- STATS !! -->
+<div id="stats">
+  <div class="row"
+       *ngIf="disposition === 1">
+    <div class="col-xs-4">
+
+    </div>
+  </div>
+  <div class="row"
+       *ngIf="disposition === 2">
+    SALUT 2
+  </div>
+  <div class="row"
+       *ngIf="disposition === 3">
+    SALUT 3
+  </div>
 </div>
-<div class="row"
-     *ngIf="disposition === 2">
-SALUT 2
-</div>
-<div class="row"
-     *ngIf="disposition === 3">
-SALUT 3
-</div>
+

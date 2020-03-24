@@ -1,21 +1,41 @@
-.col-xs-8{
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
-}
-
-.col-xs-2{
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-}
-
 .row{
-  border-style: solid;
-  border-width: 2px;
-  border-color: pink;
+
 }
 
 .btn-info:active{
   background-color: #269abc;
 }
+
+
+#menuPlayer{
+
+}
+
+#headerPlayer{
+  background-color: #A1B7C4;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.contentHeaderPlayer{
+  margin-top: 4%;
+}
+
+.note{
+
+}
+
+.textNote{
+  text-align: left;
+}
+
+
+#stats{
+  background-color: #A1B7C4;
+  border-radius: 5px;
+  min-height: 500px;
+  margin-top: 5px;
+}
+

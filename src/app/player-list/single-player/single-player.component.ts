@@ -61,4 +61,23 @@ export class SinglePlayerComponent implements OnInit {
     return res;
   }
 
+  getColorStats(num: number) {
+    let res = 'black';
+    if (num < 51) {
+      res = '#E30606';
+    } else {
+      if (num < 71) {
+        res = '#F3D217';
+      } else {
+        if (num < 81) {
+          res = '#86F327';
+        } else {
+          res = '#43800D';
+        }
+      }
+
+    }
+    return res;
+  }
+
 }
