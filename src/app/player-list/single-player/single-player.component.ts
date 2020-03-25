@@ -3,8 +3,7 @@ import { Player } from '../../models/player.model';
 import { Player_attributes } from '../../models/player_attributes';
 import {ActivatedRoute, Router} from '@angular/router';
 import {PlayersService} from '../../services/players.service';
-import {isNullOrUndefined} from 'util';
-import {isEmpty} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-single-player',
@@ -13,24 +12,18 @@ import {isEmpty} from 'rxjs/operators';
 })
 export class SinglePlayerComponent implements OnInit {
 
-
   player: Player;
-  disposition = 2;
+  disposition = 1;
 
   constructor(private route: ActivatedRoute,
               private playersService: PlayersService,
-              private router: Router) {}
-
-  ngOnInit() {
+              private router: Router) {
     const id = this.route.snapshot.params.id;
     this.player = new Player(id);
 
     this.playersService.getSinglePlayer(+id).then(
       (player: Player) => {
         this.player = player;
-        if (isNullOrUndefined(this.player.img) || this.player.img.length < 15) {
-          this.player.img = 'https://svgsilh.com/svg_v2/2130591.svg';
-        }
         this.player.age = Math.floor((new Date().getTime() - new Date(this.player.birthday).getTime()) / (365.24 * 24 * 3600 * 1000));
         this.player.weight = +(this.player.weight / 2.2046).toFixed(1);
         this.player.height = +(this.player.height / 100).toFixed(2);
@@ -44,6 +37,14 @@ export class SinglePlayerComponent implements OnInit {
       }
     );
   }
+
+
+
+
+  ngOnInit() {
+
+  }
+
 
   onBack() {
     this.router.navigate(['/players']);
@@ -79,5 +80,4 @@ export class SinglePlayerComponent implements OnInit {
     }
     return res;
   }
-
 }

@@ -451,7 +451,6 @@
 
   </div>
 
-
   <div class="row"
        *ngIf="disposition === 2">
     <div class=" col-lg-3 col-xs-5 contentStats">
@@ -710,34 +709,12 @@
       <div class="row">
         <div class="col-xs-3">
           <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.finishing)}">
-            {{player.attributes.finishing}}
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.shot_power)}">
+            {{player.attributes.shot_power}}
           </div>
         </div>
         <div class="col-xs-9">
-          <span>Finition</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.heading_accuracy)}">
-            {{player.attributes.heading_accuracy}}
-          </div>
-        </div>
-        <div class="col-xs-9">
-          <span>Précision de la tête</span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_passing)}">
-            {{player.attributes.long_passing}}
-          </div>
-        </div>
-        <div class="col-xs-9">
-          <span>Passes longues</span>
+          <span>Puissance frappe</span>
         </div>
       </div>
       <div class="row">
@@ -754,12 +731,34 @@
       <div class="row">
         <div class="col-xs-3">
           <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">
-            {{player.attributes.penalties}}
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.finishing)}">
+            {{player.attributes.finishing}}
           </div>
         </div>
         <div class="col-xs-9">
-          <span>Pénaltys</span>
+          <span>Finition</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.volleys)}">
+            {{player.attributes.volleys}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Reprise de volée</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.heading_accuracy)}">
+            {{player.attributes.heading_accuracy}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Précision de la tête</span>
         </div>
       </div>
       <div class="row">
@@ -776,12 +775,23 @@
       <div class="row">
         <div class="col-xs-3">
           <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.shot_power)}">
-            {{player.attributes.shot_power}}
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_passing)}">
+            {{player.attributes.long_passing}}
           </div>
         </div>
         <div class="col-xs-9">
-          <span>Puissance frappe</span>
+          <span>Passes longues</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">
+            {{player.attributes.penalties}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Pénaltys</span>
         </div>
       </div>
       <div class="row">
@@ -806,27 +816,14 @@
           <span>Tacle</span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="img-rounded note"
-               [ngStyle]="{backgroundColor: getColorStats(player.attributes.volleys)}">
-            {{player.attributes.volleys}}
-          </div>
-        </div>
-        <div class="col-xs-9">
-          <span>Reprise de volée</span>
-        </div>
-      </div>
     </div>
 
   </div>
 
-
   <div class="row"
        *ngIf="disposition === 3">
-    SALUT 3
+    <app-highchart-player [attributes]="player.attributes"></app-highchart-player>
   </div>
-
 
 </div>
 

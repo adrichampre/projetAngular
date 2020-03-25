@@ -16,6 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { SinglePlayerComponent } from './player-list/single-player/single-player.component';
 import {PlayersService} from './services/players.service';
+import {HighchartsChartComponent} from 'highcharts-angular';
+import { HighchartPlayerComponent } from './player-list/single-player/highchart-player/highchart-player.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {PlayersService} from './services/players.service';
     TeamListComponent,
     HeaderComponent,
     PlayerListComponent,
-    SinglePlayerComponent
+    SinglePlayerComponent,
+    HighchartsChartComponent,
+    HighchartPlayerComponent
   ],
   imports: [
     BrowserModule,
