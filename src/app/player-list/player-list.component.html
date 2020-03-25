@@ -4,7 +4,7 @@
     <div class="list-group">
       <button class="list-group-item"
               *ngFor="let player of players"
-              (click)="onViewPlayer(player.id)">
+              (click)="onViewPlayer(player.player_api_id)">
         <h3 class="list-group-item-heading">
           {{player.player_name}}
         </h3>

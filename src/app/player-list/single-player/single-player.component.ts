@@ -23,7 +23,7 @@ export class SinglePlayerComponent implements OnInit {
 
   ngOnInit() {
     const id = this.route.snapshot.params.id;
-    this.player = new Player(id + 1);
+    this.player = new Player(id);
 
     this.playersService.getSinglePlayer(+id).then(
       (player: Player) => {

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Player} from '../models/player.model';
-import {Subject} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 import * as firebase from 'firebase';
 
 @Injectable({
@@ -25,8 +25,19 @@ export class PlayersService {
   }
 
   getSinglePlayer(id: number) {
-    /*return this.players[id - 1];*/
     return new Promise(
+      ((resolve, reject) => {
+        firebase.database().ref('/players').orderByChild('player_api_id').equalTo(id).once('child_added').then(
+          (data) => {
+            resolve(data.val());
+          },
+          (error) => {
+            reject(error);
+          }
+        );
+      })
+    );
+    /*return new Promise(
       ((resolve, reject) => {
         firebase.database().ref('/players/' +  id.toString()).once('value').then(
           (data) => {
@@ -37,11 +48,23 @@ export class PlayersService {
           }
         );
       })
-    );
+    );*/
   }
 
   getAttributesPlayer(id: number) {
     return new Promise(
+      ((resolve, reject) => {
+        firebase.database().ref('/player_attributes').orderByChild('player_api_id').equalTo(id).once('child_added').then(
+          (data) => {
+            resolve(data.val());
+          },
+          (error) => {
+            reject(error);
+          }
+        );
+      })
+    );
+    /*return new Promise(
       ((resolve, reject) => {
         firebase.database().ref('/player_attributes/' +  id.toString()).once('value').then(
           (data) => {
@@ -52,7 +75,7 @@ export class PlayersService {
           }
         );
       })
-    );
+    );*/
   }
 
 }

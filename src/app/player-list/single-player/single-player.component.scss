@@ -1,7 +1,3 @@
-.row{
-
-}
-
 .btn-info:active{
   background-color: #269abc;
 }
@@ -19,23 +15,48 @@
   font-size: large;
 }
 
+#headerPlayer img{
+  max-height: 210px;
+}
+
 .contentHeaderPlayer{
   margin-top: 4%;
 }
 
 .note{
-
+  text-align: center;
+  padding: 2px;
 }
 
 .textNote{
   text-align: left;
 }
 
-
 #stats{
   background-color: #A1B7C4;
   border-radius: 5px;
   min-height: 500px;
   margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.contentStats{
+  margin-top: 20px;
+  margin-left: 6%;
+  padding: 5px;
+  background-color: #7F7C7C;
+  border-radius: 5px;
+  font-size: large;
+
+}
+
+.contentStats h4{
+  text-align: center;
+}
+
+.contentStats .row{
+  margin-left: 4px;
+  margin-bottom: 4px;
 }
 

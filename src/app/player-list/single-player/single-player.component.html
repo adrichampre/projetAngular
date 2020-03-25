@@ -53,14 +53,403 @@
 </div>
 
 
+
+
 <!-- STATS !! -->
 <div id="stats">
+
   <div class="row"
        *ngIf="disposition === 1">
-    <div class="col-xs-4">
 
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Offensives</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.crossing)}">
+            {{player.attributes.crossing}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Centres</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+                [ngStyle]="{backgroundColor: getColorStats(player.attributes.finishing)}">
+            {{player.attributes.finishing}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Finition</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.heading_accuracy)}">
+            {{player.attributes.heading_accuracy}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Précision de la tête</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.short_passing)}">
+            {{player.attributes.short_passing}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Passes courtes</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.volleys)}">
+            {{player.attributes.volleys}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Reprise de volée</span>
+        </div>
+      </div>
     </div>
+
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Technique</h4>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.dribbling)}">
+            {{player.attributes.dribbling}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Dribble</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.curve)}">
+            {{player.attributes.curve}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Effet</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.free_kick_accuracy)}">
+            {{player.attributes.free_kick_accuracy}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Précision CF</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_passing)}">
+            {{player.attributes.long_passing}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Passes longues</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.ball_control)}">
+            {{player.attributes.ball_control}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Contrôle du ballon</span>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Mouvement</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.acceleration)}">
+            {{player.attributes.acceleration}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Accélération</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sprint_speed)}">
+            {{player.attributes.sprint_speed}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Vitesse</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.agility)}">
+            {{player.attributes.agility}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Agilité</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.reactions)}">
+            {{player.attributes.reactions}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Réactivité</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.balance)}">
+            {{player.attributes.balance}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Equilibre</span>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Puissance</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.shot_power)}">
+            {{player.attributes.shot_power}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Puissance frappe</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.jumping)}">
+            {{player.attributes.jumping}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Détente</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.stamina)}">
+            {{player.attributes.stamina}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Endurance</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.strength)}">
+            {{player.attributes.strength}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Force</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_shots)}">
+            {{player.attributes.long_shots}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Tirs de loin</span>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Etat d'esprit</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.aggression)}">
+            {{player.attributes.aggression}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Agressivité</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.interceptions)}">
+            {{player.attributes.interceptions}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Interceptions</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.positioning)}">
+            {{player.attributes.positioning}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Placement</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.vision)}">
+            {{player.attributes.vision}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Vista</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">
+            {{player.attributes.penalties}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Penaltys</span>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Défense</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.standing_tackle)}">
+            {{player.attributes.standing_tackle}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Tacle</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sliding_tackle)}">
+            {{player.attributes.sliding_tackle}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Tacle glissé</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.marking)}">
+            {{player.attributes.marking}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Marquage</span>
+        </div>
+      </div>
   </div>
+    <div class=" col-lg-3 col-xs-5 contentStats">
+      <h4>Gardien</h4>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_diving)}">
+            {{player.attributes.gk_diving}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Plongeon</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_handling)}">
+            {{player.attributes.gk_handling}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Jeu à la main</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_kicking)}">
+            {{player.attributes.gk_kicking}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Jeu au pied</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_positioning)}">
+            {{player.attributes.gk_positioning}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Placement</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="img-rounded note"
+               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_reflexes)}">
+            {{player.attributes.gk_reflexes}}
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <span>Réflexes</span>
+        </div>
+      </div>
+    </div>
+
+
   <div class="row"
        *ngIf="disposition === 2">
     SALUT 2
