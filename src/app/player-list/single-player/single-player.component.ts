@@ -15,7 +15,7 @@ export class SinglePlayerComponent implements OnInit {
 
 
   player: Player;
-  disposition = 1;
+  disposition = 2;
 
   constructor(private route: ActivatedRoute,
               private playersService: PlayersService,
@@ -70,7 +70,7 @@ export class SinglePlayerComponent implements OnInit {
         res = '#F3D217';
       } else {
         if (num < 81) {
-          res = '#86F327';
+          res = '#03C81A';
         } else {
           res = '#43800D';
         }
