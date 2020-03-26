@@ -1,0 +1,1702 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-bi documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angular-bi documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SinglePlayerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/player-list/single-player/single-player.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-single-player</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./single-player.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./single-player.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#disposition">disposition</a>
+                            </li>
+                            <li>
+                                <a href="#player">player</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getColor">getColor</a>
+                            </li>
+                            <li>
+                                <a href="#getColorStats">getColorStats</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onBack">onBack</a>
+                            </li>
+                            <li>
+                                <a href="#onButton">onButton</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, playersService: <a href="../injectables/PlayersService.html">PlayersService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playersService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlayersService.html" target="_self" >PlayersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getColor"></a>
+                    <span class="name">
+                        <b>
+                            getColor
+                        </b>
+                        <a href="#getColor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getColor(num: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>num</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getColorStats"></a>
+                    <span class="name">
+                        <b>
+                            getColorStats
+                        </b>
+                        <a href="#getColorStats"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getColorStats(num: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>num</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onBack"></a>
+                    <span class="name">
+                        <b>
+                            onBack
+                        </b>
+                        <a href="#onBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onButton"></a>
+                    <span class="name">
+                        <b>
+                            onButton
+                        </b>
+                        <a href="#onButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onButton(num: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>num</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="disposition"></a>
+                        <span class="name">
+                            <b>
+                            disposition</b>
+                            <a href="#disposition"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>1</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="player"></a>
+                        <span class="name">
+                            <b>
+                            player</b>
+                            <a href="#player"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import { Player } from &#x27;../../models/player.model&#x27;;
+import { Player_attributes } from &#x27;../../models/player_attributes&#x27;;
+import {ActivatedRoute, Router} from &#x27;@angular/router&#x27;;
+import {PlayersService} from &#x27;../../services/players.service&#x27;;
+
+
+@Component({
+  selector: &#x27;app-single-player&#x27;,
+  templateUrl: &#x27;./single-player.component.html&#x27;,
+  styleUrls: [&#x27;./single-player.component.scss&#x27;]
+})
+export class SinglePlayerComponent implements OnInit {
+
+  player: Player;
+  disposition &#x3D; 1;
+
+  constructor(private route: ActivatedRoute,
+              private playersService: PlayersService,
+              private router: Router) {
+    const id &#x3D; this.route.snapshot.params.id;
+    this.player &#x3D; new Player(id);
+
+    this.playersService.getSinglePlayer(+id).then(
+      (player: Player) &#x3D;&gt; {
+        this.player &#x3D; player;
+        this.player.age &#x3D; Math.floor((new Date().getTime() - new Date(this.player.birthday).getTime()) / (365.24 * 24 * 3600 * 1000));
+        this.player.weight &#x3D; +(this.player.weight / 2.2046).toFixed(1);
+        this.player.height &#x3D; +(this.player.height / 100).toFixed(2);
+      }
+    );
+
+    this.playersService.getAttributesPlayer(+id).then(
+      // tslint:disable-next-line:variable-name
+      (player_attributes: Player_attributes) &#x3D;&gt; {
+        this.player.attributes &#x3D; player_attributes;
+      }
+    );
+  }
+
+
+
+
+  ngOnInit() {
+
+  }
+
+
+  onBack() {
+    this.router.navigate([&#x27;/players&#x27;]);
+  }
+
+  onButton(num: number) {
+    this.disposition &#x3D; num;
+  }
+
+  getColor(num: number) {
+    let res &#x3D; &#x27;#5bc0de&#x27;;
+    if (this.disposition &#x3D;&#x3D;&#x3D; num) {
+      res &#x3D; &#x27;#269abc&#x27;;
+    }
+    return res;
+  }
+
+  getColorStats(num: number) {
+    let res &#x3D; &#x27;black&#x27;;
+    if (num &lt; 51) {
+      res &#x3D; &#x27;#E30606&#x27;;
+    } else {
+      if (num &lt; 71) {
+        res &#x3D; &#x27;#F3D217&#x27;;
+      } else {
+        if (num &lt; 81) {
+          res &#x3D; &#x27;#03C81A&#x27;;
+        } else {
+          res &#x3D; &#x27;#43800D&#x27;;
+        }
+      }
+
+    }
+    return res;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot; id&#x3D;&quot;menuPlayer&quot;&gt;
+  &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+    &lt;button class&#x3D;&quot;btn btn-default&quot; (click)&#x3D;&quot;onBack()&quot;&gt;&lt;i class&#x3D;&quot;glyphicon glyphicon-arrow-left&quot;&gt;&lt;/i&gt; Retour&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-xs-6 text-center&quot;&gt;
+    &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+      &lt;a class&#x3D;&quot;btn btn-info&quot; (click)&#x3D;&quot;onButton(1)&quot; [ngStyle]&#x3D;&quot;{backgroundColor: getColor(1)}&quot;&gt;1&lt;/a&gt;
+      &lt;a class&#x3D;&quot;btn btn-info&quot; (click)&#x3D;&quot;onButton(2)&quot; [ngStyle]&#x3D;&quot;{backgroundColor: getColor(2)}&quot;&gt;2&lt;/a&gt;
+      &lt;a class&#x3D;&quot;btn btn-info&quot; (click)&#x3D;&quot;onButton(3)&quot; [ngStyle]&#x3D;&quot;{backgroundColor: getColor(3)}&quot;&gt;3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- HEADER PLAYER --&gt;
+&lt;div class&#x3D;&quot;row&quot; id&#x3D;&quot;headerPlayer&quot;&gt;
+  &lt;div class&#x3D;&quot;col-xs-2&quot;&gt;
+    &lt;img class&#x3D;&quot;img-thumbnail&quot; src&#x3D;&quot;{{player.img}}&quot;/&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-xs-10 text-center&quot;&gt;
+    &lt;h1&gt;{{player.player_name}}&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;row contentHeaderPlayer&quot;&gt;
+      &lt;div class&#x3D;&quot;col-xs-2&quot;&gt;
+        &lt;label&gt;ID : {{player.id}}&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-4&quot;&gt;
+        &lt;label&gt;Age : {{player.age}} ans ({{player.birthday | date: &#x27;d MMMM y&#x27;}})&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+        &lt;label&gt;Taille : {{player.height}} m&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+        &lt;label&gt;Poids : {{player.weight}} kg&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;row contentHeaderPlayer&quot;&gt;
+      &lt;div class&#x3D;&quot;col-xs-offset-1 col-xs-1 img-rounded note&quot;
+           [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.overall_rating)}&quot;&gt;
+        &lt;b&gt;{{player.attributes.overall_rating}}&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-3 textNote&quot; &gt;
+        &lt;b&gt;Note globale&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-offset-2 col-xs-1 img-rounded note&quot;
+           [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.potential)}&quot;&gt;
+        &lt;b&gt;{{player.attributes.potential}}&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-xs-3 textNote&quot;&gt;
+        &lt;b&gt;Potentiel&lt;/b&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;!-- STATS !! --&gt;
+&lt;div id&#x3D;&quot;stats&quot;&gt;
+
+  &lt;div class&#x3D;&quot;row&quot;
+       *ngIf&#x3D;&quot;disposition &#x3D;&#x3D;&#x3D; 1&quot;&gt;
+
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Offensives&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.crossing)}&quot;&gt;
+            {{player.attributes.crossing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Centres&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+                [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.finishing)}&quot;&gt;
+            {{player.attributes.finishing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Finition&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.heading_accuracy)}&quot;&gt;
+            {{player.attributes.heading_accuracy}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Précision de la tête&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.short_passing)}&quot;&gt;
+            {{player.attributes.short_passing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Passes courtes&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.volleys)}&quot;&gt;
+            {{player.attributes.volleys}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Reprise de volée&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Technique&lt;/h4&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.dribbling)}&quot;&gt;
+            {{player.attributes.dribbling}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Dribble&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.curve)}&quot;&gt;
+            {{player.attributes.curve}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Effet&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.free_kick_accuracy)}&quot;&gt;
+            {{player.attributes.free_kick_accuracy}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Précision CF&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.long_passing)}&quot;&gt;
+            {{player.attributes.long_passing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Passes longues&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.ball_control)}&quot;&gt;
+            {{player.attributes.ball_control}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Contrôle du ballon&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Mouvement&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.acceleration)}&quot;&gt;
+            {{player.attributes.acceleration}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Accélération&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.sprint_speed)}&quot;&gt;
+            {{player.attributes.sprint_speed}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Vitesse&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.agility)}&quot;&gt;
+            {{player.attributes.agility}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Agilité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.reactions)}&quot;&gt;
+            {{player.attributes.reactions}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Réactivité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.balance)}&quot;&gt;
+            {{player.attributes.balance}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Equilibre&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Puissance&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.shot_power)}&quot;&gt;
+            {{player.attributes.shot_power}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Puissance frappe&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.jumping)}&quot;&gt;
+            {{player.attributes.jumping}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Détente&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.stamina)}&quot;&gt;
+            {{player.attributes.stamina}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Endurance&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.strength)}&quot;&gt;
+            {{player.attributes.strength}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Force&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.long_shots)}&quot;&gt;
+            {{player.attributes.long_shots}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tirs de loin&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Etat d&#x27;esprit&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.aggression)}&quot;&gt;
+            {{player.attributes.aggression}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Agressivité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.interceptions)}&quot;&gt;
+            {{player.attributes.interceptions}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Interceptions&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.positioning)}&quot;&gt;
+            {{player.attributes.positioning}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Placement&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.vision)}&quot;&gt;
+            {{player.attributes.vision}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Vista&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.penalties)}&quot;&gt;
+            {{player.attributes.penalties}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Penaltys&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Défense&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.standing_tackle)}&quot;&gt;
+            {{player.attributes.standing_tackle}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tacle&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.sliding_tackle)}&quot;&gt;
+            {{player.attributes.sliding_tackle}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tacle glissé&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.marking)}&quot;&gt;
+            {{player.attributes.marking}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Marquage&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Gardien&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.gk_diving)}&quot;&gt;
+            {{player.attributes.gk_diving}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Plongeon&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.gk_handling)}&quot;&gt;
+            {{player.attributes.gk_handling}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Jeu à la main&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.gk_kicking)}&quot;&gt;
+            {{player.attributes.gk_kicking}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Jeu au pied&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.gk_positioning)}&quot;&gt;
+            {{player.attributes.gk_positioning}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Placement&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.gk_reflexes)}&quot;&gt;
+            {{player.attributes.gk_reflexes}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Réflexes&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row&quot;
+       *ngIf&#x3D;&quot;disposition &#x3D;&#x3D;&#x3D; 2&quot;&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Physique&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.acceleration)}&quot;&gt;
+            {{player.attributes.acceleration}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Accélération&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.agility)}&quot;&gt;
+            {{player.attributes.agility}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Agilité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.balance)}&quot;&gt;
+            {{player.attributes.balance}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Equilibre&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.jumping)}&quot;&gt;
+            {{player.attributes.jumping}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Détente&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.reactions)}&quot;&gt;
+            {{player.attributes.reactions}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Réactivité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.sprint_speed)}&quot;&gt;
+            {{player.attributes.sprint_speed}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Vitesse&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.stamina)}&quot;&gt;
+            {{player.attributes.stamina}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Endurance&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.strength)}&quot;&gt;
+            {{player.attributes.strength}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Force&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Mental&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.aggression)}&quot;&gt;
+            {{player.attributes.aggression}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Agressivité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.positioning)}&quot;&gt;
+            {{player.attributes.positioning}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Placement&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.interceptions)}&quot;&gt;
+            {{player.attributes.interceptions}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Interceptions&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.vision)}&quot;&gt;
+            {{player.attributes.vision}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Vista&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Etat d&#x27;esprit&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.aggression)}&quot;&gt;
+            {{player.attributes.aggression}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Agressivité&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.interceptions)}&quot;&gt;
+            {{player.attributes.interceptions}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Interceptions&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.positioning)}&quot;&gt;
+            {{player.attributes.positioning}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Placement&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.vision)}&quot;&gt;
+            {{player.attributes.vision}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Vista&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.penalties)}&quot;&gt;
+            {{player.attributes.penalties}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Penaltys&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot; col-lg-3 col-xs-5 contentStats&quot;&gt;
+      &lt;h4&gt;Technique&lt;/h4&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.ball_control)}&quot;&gt;
+            {{player.attributes.ball_control}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Contrôle du ballon&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.crossing)}&quot;&gt;
+            {{player.attributes.crossing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Centres&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.curve)}&quot;&gt;
+            {{player.attributes.curve}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Effet&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.dribbling)}&quot;&gt;
+            {{player.attributes.dribbling}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Dribble&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.free_kick_accuracy)}&quot;&gt;
+            {{player.attributes.free_kick_accuracy}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Précision CF&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.shot_power)}&quot;&gt;
+            {{player.attributes.shot_power}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Puissance frappe&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.long_shots)}&quot;&gt;
+            {{player.attributes.long_shots}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tirs de loin&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.finishing)}&quot;&gt;
+            {{player.attributes.finishing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Finition&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.volleys)}&quot;&gt;
+            {{player.attributes.volleys}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Reprise de volée&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.heading_accuracy)}&quot;&gt;
+            {{player.attributes.heading_accuracy}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Précision de la tête&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.short_passing)}&quot;&gt;
+            {{player.attributes.short_passing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Passes courtes&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.long_passing)}&quot;&gt;
+            {{player.attributes.long_passing}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Passes longues&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.penalties)}&quot;&gt;
+            {{player.attributes.penalties}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Pénaltys&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.sliding_tackle)}&quot;&gt;
+            {{player.attributes.sliding_tackle}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tacle glissé&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-xs-3&quot;&gt;
+          &lt;div class&#x3D;&quot;img-rounded note&quot;
+               [ngStyle]&#x3D;&quot;{backgroundColor: getColorStats(player.attributes.standing_tackle)}&quot;&gt;
+            {{player.attributes.standing_tackle}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col-xs-9&quot;&gt;
+          &lt;span&gt;Tacle&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;row&quot;
+       *ngIf&#x3D;&quot;disposition &#x3D;&#x3D;&#x3D; 3&quot;&gt;
+    &lt;app-highchart-player [attributes]&#x3D;&quot;player.attributes&quot;&gt;&lt;/app-highchart-player&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./single-player.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.btn-info:active{
+  background-color: #269abc;
+}
+
+
+#menuPlayer{
+
+}
+
+#headerPlayer{
+  background-color: #A1B7C4;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+#headerPlayer img{
+  max-height: 210px;
+}
+
+.contentHeaderPlayer{
+  margin-top: 4%;
+}
+
+.note{
+  text-align: center;
+  padding: 2px;
+}
+
+.textNote{
+  text-align: left;
+}
+
+#stats{
+  background-color: #A1B7C4;
+  border-radius: 5px;
+  min-height: 500px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.contentStats{
+  margin-left: 6%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #A29F61;
+  border-radius: 5px;
+  font-size: large;
+
+}
+
+.contentStats h4{
+  text-align: center;
+  color: white;
+}
+
+.contentStats .row{
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row" id="menuPlayer">  <div class="col-xs-3">    <button class="btn btn-default" (click)="onBack()"><i class="glyphicon glyphicon-arrow-left"></i> Retour</button>  </div>  <div class="col-xs-6 text-center">    <div class="btn-group">      <a class="btn btn-info" (click)="onButton(1)" [ngStyle]="{backgroundColor: getColor(1)}">1</a>      <a class="btn btn-info" (click)="onButton(2)" [ngStyle]="{backgroundColor: getColor(2)}">2</a>      <a class="btn btn-info" (click)="onButton(3)" [ngStyle]="{backgroundColor: getColor(3)}">3</a>    </div>  </div></div><!-- HEADER PLAYER --><div class="row" id="headerPlayer">  <div class="col-xs-2">    <img class="img-thumbnail" src="{{player.img}}"/>  </div>  <div class="col-xs-10 text-center">    <h1>{{player.player_name}}</h1>    <div class="row contentHeaderPlayer">      <div class="col-xs-2">        <label>ID : {{player.id}}</label>      </div>      <div class="col-xs-4">        <label>Age : {{player.age}} ans ({{player.birthday | date: \'d MMMM y\'}})</label>      </div>      <div class="col-xs-3">        <label>Taille : {{player.height}} m</label>      </div>      <div class="col-xs-3">        <label>Poids : {{player.weight}} kg</label>      </div>    </div>    <div class="row contentHeaderPlayer">      <div class="col-xs-offset-1 col-xs-1 img-rounded note"           [ngStyle]="{backgroundColor: getColorStats(player.attributes.overall_rating)}">        <b>{{player.attributes.overall_rating}}</b>      </div>      <div class="col-xs-3 textNote" >        <b>Note globale</b>      </div>      <div class="col-xs-offset-2 col-xs-1 img-rounded note"           [ngStyle]="{backgroundColor: getColorStats(player.attributes.potential)}">        <b>{{player.attributes.potential}}</b>      </div>      <div class="col-xs-3 textNote">        <b>Potentiel</b>      </div>    </div>  </div></div><!-- STATS !! --><div id="stats">  <div class="row"       *ngIf="disposition === 1">    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Offensives</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.crossing)}">            {{player.attributes.crossing}}          </div>        </div>        <div class="col-xs-9">          <span>Centres</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"                [ngStyle]="{backgroundColor: getColorStats(player.attributes.finishing)}">            {{player.attributes.finishing}}          </div>        </div>        <div class="col-xs-9">          <span>Finition</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.heading_accuracy)}">            {{player.attributes.heading_accuracy}}          </div>        </div>        <div class="col-xs-9">          <span>Précision de la tête</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.short_passing)}">            {{player.attributes.short_passing}}          </div>        </div>        <div class="col-xs-9">          <span>Passes courtes</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.volleys)}">            {{player.attributes.volleys}}          </div>        </div>        <div class="col-xs-9">          <span>Reprise de volée</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Technique</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.dribbling)}">            {{player.attributes.dribbling}}          </div>        </div>        <div class="col-xs-9">          <span>Dribble</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.curve)}">            {{player.attributes.curve}}          </div>        </div>        <div class="col-xs-9">          <span>Effet</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.free_kick_accuracy)}">            {{player.attributes.free_kick_accuracy}}          </div>        </div>        <div class="col-xs-9">          <span>Précision CF</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_passing)}">            {{player.attributes.long_passing}}          </div>        </div>        <div class="col-xs-9">          <span>Passes longues</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.ball_control)}">            {{player.attributes.ball_control}}          </div>        </div>        <div class="col-xs-9">          <span>Contrôle du ballon</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Mouvement</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.acceleration)}">            {{player.attributes.acceleration}}          </div>        </div>        <div class="col-xs-9">          <span>Accélération</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sprint_speed)}">            {{player.attributes.sprint_speed}}          </div>        </div>        <div class="col-xs-9">          <span>Vitesse</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.agility)}">            {{player.attributes.agility}}          </div>        </div>        <div class="col-xs-9">          <span>Agilité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.reactions)}">            {{player.attributes.reactions}}          </div>        </div>        <div class="col-xs-9">          <span>Réactivité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.balance)}">            {{player.attributes.balance}}          </div>        </div>        <div class="col-xs-9">          <span>Equilibre</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Puissance</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.shot_power)}">            {{player.attributes.shot_power}}          </div>        </div>        <div class="col-xs-9">          <span>Puissance frappe</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.jumping)}">            {{player.attributes.jumping}}          </div>        </div>        <div class="col-xs-9">          <span>Détente</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.stamina)}">            {{player.attributes.stamina}}          </div>        </div>        <div class="col-xs-9">          <span>Endurance</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.strength)}">            {{player.attributes.strength}}          </div>        </div>        <div class="col-xs-9">          <span>Force</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_shots)}">            {{player.attributes.long_shots}}          </div>        </div>        <div class="col-xs-9">          <span>Tirs de loin</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Etat d\'esprit</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.aggression)}">            {{player.attributes.aggression}}          </div>        </div>        <div class="col-xs-9">          <span>Agressivité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.interceptions)}">            {{player.attributes.interceptions}}          </div>        </div>        <div class="col-xs-9">          <span>Interceptions</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.positioning)}">            {{player.attributes.positioning}}          </div>        </div>        <div class="col-xs-9">          <span>Placement</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.vision)}">            {{player.attributes.vision}}          </div>        </div>        <div class="col-xs-9">          <span>Vista</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">            {{player.attributes.penalties}}          </div>        </div>        <div class="col-xs-9">          <span>Penaltys</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Défense</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.standing_tackle)}">            {{player.attributes.standing_tackle}}          </div>        </div>        <div class="col-xs-9">          <span>Tacle</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sliding_tackle)}">            {{player.attributes.sliding_tackle}}          </div>        </div>        <div class="col-xs-9">          <span>Tacle glissé</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.marking)}">            {{player.attributes.marking}}          </div>        </div>        <div class="col-xs-9">          <span>Marquage</span>        </div>      </div>  </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Gardien</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_diving)}">            {{player.attributes.gk_diving}}          </div>        </div>        <div class="col-xs-9">          <span>Plongeon</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_handling)}">            {{player.attributes.gk_handling}}          </div>        </div>        <div class="col-xs-9">          <span>Jeu à la main</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_kicking)}">            {{player.attributes.gk_kicking}}          </div>        </div>        <div class="col-xs-9">          <span>Jeu au pied</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_positioning)}">            {{player.attributes.gk_positioning}}          </div>        </div>        <div class="col-xs-9">          <span>Placement</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.gk_reflexes)}">            {{player.attributes.gk_reflexes}}          </div>        </div>        <div class="col-xs-9">          <span>Réflexes</span>        </div>      </div>    </div>  </div>  <div class="row"       *ngIf="disposition === 2">    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Physique</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.acceleration)}">            {{player.attributes.acceleration}}          </div>        </div>        <div class="col-xs-9">          <span>Accélération</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.agility)}">            {{player.attributes.agility}}          </div>        </div>        <div class="col-xs-9">          <span>Agilité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.balance)}">            {{player.attributes.balance}}          </div>        </div>        <div class="col-xs-9">          <span>Equilibre</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.jumping)}">            {{player.attributes.jumping}}          </div>        </div>        <div class="col-xs-9">          <span>Détente</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.reactions)}">            {{player.attributes.reactions}}          </div>        </div>        <div class="col-xs-9">          <span>Réactivité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sprint_speed)}">            {{player.attributes.sprint_speed}}          </div>        </div>        <div class="col-xs-9">          <span>Vitesse</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.stamina)}">            {{player.attributes.stamina}}          </div>        </div>        <div class="col-xs-9">          <span>Endurance</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.strength)}">            {{player.attributes.strength}}          </div>        </div>        <div class="col-xs-9">          <span>Force</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Mental</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.aggression)}">            {{player.attributes.aggression}}          </div>        </div>        <div class="col-xs-9">          <span>Agressivité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.positioning)}">            {{player.attributes.positioning}}          </div>        </div>        <div class="col-xs-9">          <span>Placement</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.interceptions)}">            {{player.attributes.interceptions}}          </div>        </div>        <div class="col-xs-9">          <span>Interceptions</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.vision)}">            {{player.attributes.vision}}          </div>        </div>        <div class="col-xs-9">          <span>Vista</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Etat d\'esprit</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.aggression)}">            {{player.attributes.aggression}}          </div>        </div>        <div class="col-xs-9">          <span>Agressivité</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.interceptions)}">            {{player.attributes.interceptions}}          </div>        </div>        <div class="col-xs-9">          <span>Interceptions</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.positioning)}">            {{player.attributes.positioning}}          </div>        </div>        <div class="col-xs-9">          <span>Placement</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.vision)}">            {{player.attributes.vision}}          </div>        </div>        <div class="col-xs-9">          <span>Vista</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">            {{player.attributes.penalties}}          </div>        </div>        <div class="col-xs-9">          <span>Penaltys</span>        </div>      </div>    </div>    <div class=" col-lg-3 col-xs-5 contentStats">      <h4>Technique</h4>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.ball_control)}">            {{player.attributes.ball_control}}          </div>        </div>        <div class="col-xs-9">          <span>Contrôle du ballon</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.crossing)}">            {{player.attributes.crossing}}          </div>        </div>        <div class="col-xs-9">          <span>Centres</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.curve)}">            {{player.attributes.curve}}          </div>        </div>        <div class="col-xs-9">          <span>Effet</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.dribbling)}">            {{player.attributes.dribbling}}          </div>        </div>        <div class="col-xs-9">          <span>Dribble</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.free_kick_accuracy)}">            {{player.attributes.free_kick_accuracy}}          </div>        </div>        <div class="col-xs-9">          <span>Précision CF</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.shot_power)}">            {{player.attributes.shot_power}}          </div>        </div>        <div class="col-xs-9">          <span>Puissance frappe</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_shots)}">            {{player.attributes.long_shots}}          </div>        </div>        <div class="col-xs-9">          <span>Tirs de loin</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.finishing)}">            {{player.attributes.finishing}}          </div>        </div>        <div class="col-xs-9">          <span>Finition</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.volleys)}">            {{player.attributes.volleys}}          </div>        </div>        <div class="col-xs-9">          <span>Reprise de volée</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.heading_accuracy)}">            {{player.attributes.heading_accuracy}}          </div>        </div>        <div class="col-xs-9">          <span>Précision de la tête</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.short_passing)}">            {{player.attributes.short_passing}}          </div>        </div>        <div class="col-xs-9">          <span>Passes courtes</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.long_passing)}">            {{player.attributes.long_passing}}          </div>        </div>        <div class="col-xs-9">          <span>Passes longues</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.penalties)}">            {{player.attributes.penalties}}          </div>        </div>        <div class="col-xs-9">          <span>Pénaltys</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.sliding_tackle)}">            {{player.attributes.sliding_tackle}}          </div>        </div>        <div class="col-xs-9">          <span>Tacle glissé</span>        </div>      </div>      <div class="row">        <div class="col-xs-3">          <div class="img-rounded note"               [ngStyle]="{backgroundColor: getColorStats(player.attributes.standing_tackle)}">            {{player.attributes.standing_tackle}}          </div>        </div>        <div class="col-xs-9">          <span>Tacle</span>        </div>      </div>    </div>  </div>  <div class="row"       *ngIf="disposition === 3">    <app-highchart-player [attributes]="player.attributes"></app-highchart-player>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HighchartPlayerComponent', 'selector': 'app-highchart-player'},{'name': 'PlayerListComponent', 'selector': 'app-player-list'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SinglePlayerComponent', 'selector': 'app-single-player'},{'name': 'SingleTeamComponent', 'selector': 'app-single-team'},{'name': 'TeamListComponent', 'selector': 'app-team-list'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SinglePlayerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SinglePlayerComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
