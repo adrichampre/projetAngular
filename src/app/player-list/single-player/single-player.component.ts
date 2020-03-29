@@ -20,6 +20,7 @@ export class SinglePlayerComponent implements OnInit {
               private router: Router) {
     const id = this.route.snapshot.params.id;
     this.player = new Player(id);
+    this.player.attributes = new Player_attributes();
 
     this.playersService.getSinglePlayer(+id).then(
       (player: Player) => {
@@ -31,20 +32,15 @@ export class SinglePlayerComponent implements OnInit {
     );
 
     this.playersService.getAttributesPlayer(+id).then(
-      // tslint:disable-next-line:variable-name
-      (player_attributes: Player_attributes) => {
-        this.player.attributes = player_attributes;
+      (attributes: Player_attributes) => {
+        this.player.attributes = attributes;
       }
     );
   }
 
-
-
-
   ngOnInit() {
 
   }
-
 
   onBack() {
     this.router.navigate(['/players']);
@@ -76,7 +72,6 @@ export class SinglePlayerComponent implements OnInit {
           res = '#43800D';
         }
       }
-
     }
     return res;
   }

@@ -44,91 +44,9 @@ export class Player_attributes {
   private _gk_positioning: number;
   private _gk_reflexes: number;
 
-  constructor(id: number,
-              player_fifa_api_id: number,
-              player_api_id: number,
-              date: Date,
-              overall_rating: number,
-              potential: number,
-              preferred_foot: string,
-              attacking_work_rate: string,
-              defensive_work_rate: string,
-              crossing: number,
-              finishing: number,
-              heading_accuracy: number,
-              short_passing: number,
-              volleys: number,
-              dribbling: number,
-              curve: number,
-              free_kick_accuracy: number,
-              long_passing: number,
-              ball_control: number,
-              acceleration: number,
-              sprint_speed: number,
-              agility: number,
-              reactions: number,
-              balance: number,
-              shot_power: number,
-              jumping: number,
-              stamina: number,
-              strength: number,
-              long_shots: number,
-              aggression: number,
-              interceptions: number,
-              positioning: number,
-              vision: number,
-              penalties: number,
-              marking: number,
-              standing_tackle: number,
-              sliding_tackle: number,
-              gk_diving: number,
-              gk_handling: number,
-              gk_kicking: number,
-              gk_positioning: number,
-              gk_reflexes: number)
-  {
-    this._id = id;
-    this._player_fifa_api_id = player_fifa_api_id;
-    this._player_api_id = player_api_id;
-    this._date = date;
-    this._overall_rating = overall_rating;
-    this._potential = potential;
-    this._preferred_foot = preferred_foot;
-    this._attacking_work_rate = attacking_work_rate;
-    this._defensive_work_rate = defensive_work_rate;
-    this._crossing = crossing;
-    this._finishing = finishing;
-    this._heading_accuracy = heading_accuracy;
-    this._short_passing = short_passing;
-    this._volleys = volleys;
-    this._dribbling = dribbling;
-    this._curve = curve;
-    this._free_kick_accuracy = free_kick_accuracy;
-    this._long_passing = long_passing;
-    this._ball_control = ball_control;
-    this._acceleration = acceleration;
-    this._sprint_speed = sprint_speed;
-    this._agility = agility;
-    this._reactions = reactions;
-    this._balance = balance;
-    this._shot_power = shot_power;
-    this._jumping = jumping;
-    this._stamina = stamina;
-    this._strength = strength;
-    this._long_shots = long_shots;
-    this._aggression = aggression;
-    this._interceptions = interceptions;
-    this._positioning = positioning;
-    this._vision = vision;
-    this._penalties = penalties;
-    this._marking = marking;
-    this._standing_tackle = standing_tackle;
-    this._sliding_tackle = sliding_tackle;
-    this._gk_diving = gk_diving;
-    this._gk_handling = gk_handling;
-    this._gk_kicking = gk_kicking;
-    this._gk_positioning = gk_positioning;
-    this._gk_reflexes = gk_reflexes;
+  constructor() {
+    this._overall_rating = 0;
+    this._potential = 0;
   }
 
   get id(): number {
@@ -297,5 +215,172 @@ export class Player_attributes {
 
   get gk_reflexes(): number {
     return this._gk_reflexes;
+  }
+  set id(value: number) {
+    this._id = value;
+  }
+
+  set player_fifa_api_id(value: number) {
+    this._player_fifa_api_id = value;
+  }
+
+  set player_api_id(value: number) {
+    this._player_api_id = value;
+  }
+
+  set date(value: Date) {
+    this._date = value;
+  }
+
+  set overall_rating(value: number) {
+    this._overall_rating = value;
+  }
+
+  set potential(value: number) {
+    this._potential = value;
+  }
+
+  set preferred_foot(value: string) {
+    this._preferred_foot = value;
+  }
+
+  set attacking_work_rate(value: string) {
+    this._attacking_work_rate = value;
+  }
+
+  set defensive_work_rate(value: string) {
+    this._defensive_work_rate = value;
+  }
+
+  set crossing(value: number) {
+    this._crossing = value;
+  }
+
+  set finishing(value: number) {
+    this._finishing = value;
+  }
+
+  set heading_accuracy(value: number) {
+    this._heading_accuracy = value;
+  }
+
+  set short_passing(value: number) {
+    this._short_passing = value;
+  }
+
+  set volleys(value: number) {
+    this._volleys = value;
+  }
+
+  set dribbling(value: number) {
+    this._dribbling = value;
+  }
+
+  set curve(value: number) {
+    this._curve = value;
+  }
+
+  set free_kick_accuracy(value: number) {
+    this._free_kick_accuracy = value;
+  }
+
+  set long_passing(value: number) {
+    this._long_passing = value;
+  }
+
+  set ball_control(value: number) {
+    this._ball_control = value;
+  }
+
+  set acceleration(value: number) {
+    this._acceleration = value;
+  }
+
+  set sprint_speed(value: number) {
+    this._sprint_speed = value;
+  }
+
+  set agility(value: number) {
+    this._agility = value;
+  }
+
+  set reactions(value: number) {
+    this._reactions = value;
+  }
+
+  set balance(value: number) {
+    this._balance = value;
+  }
+
+  set shot_power(value: number) {
+    this._shot_power = value;
+  }
+
+  set jumping(value: number) {
+    this._jumping = value;
+  }
+
+  set stamina(value: number) {
+    this._stamina = value;
+  }
+
+  set strength(value: number) {
+    this._strength = value;
+  }
+
+  set long_shots(value: number) {
+    this._long_shots = value;
+  }
+
+  set aggression(value: number) {
+    this._aggression = value;
+  }
+
+  set interceptions(value: number) {
+    this._interceptions = value;
+  }
+
+  set positioning(value: number) {
+    this._positioning = value;
+  }
+
+  set vision(value: number) {
+    this._vision = value;
+  }
+
+  set penalties(value: number) {
+    this._penalties = value;
+  }
+
+  set marking(value: number) {
+    this._marking = value;
+  }
+
+  set standing_tackle(value: number) {
+    this._standing_tackle = value;
+  }
+
+  set sliding_tackle(value: number) {
+    this._sliding_tackle = value;
+  }
+
+  set gk_diving(value: number) {
+    this._gk_diving = value;
+  }
+
+  set gk_handling(value: number) {
+    this._gk_handling = value;
+  }
+
+  set gk_kicking(value: number) {
+    this._gk_kicking = value;
+  }
+
+  set gk_positioning(value: number) {
+    this._gk_positioning = value;
+  }
+
+  set gk_reflexes(value: number) {
+    this._gk_reflexes = value;
   }
 }

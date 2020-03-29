@@ -37,18 +37,6 @@ export class PlayersService {
         );
       })
     );
-    /*return new Promise(
-      ((resolve, reject) => {
-        firebase.database().ref('/players/' +  id.toString()).once('value').then(
-          (data) => {
-            resolve(data.val());
-          },
-          (error) => {
-            reject(error);
-          }
-        );
-      })
-    );*/
   }
 
   getAttributesPlayer(id: number) {
@@ -64,18 +52,6 @@ export class PlayersService {
         );
       })
     );
-    /*return new Promise(
-      ((resolve, reject) => {
-        firebase.database().ref('/player_attributes/' +  id.toString()).once('value').then(
-          (data) => {
-            resolve(data.val());
-          },
-          (error) => {
-            reject(error);
-          }
-        );
-      })
-    );*/
   }
 
 }

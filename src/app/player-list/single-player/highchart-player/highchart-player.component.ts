@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import * as Highcharts from 'highcharts';
 import {Player_attributes} from '../../../models/player_attributes';
+import {isNullOrUndefined} from 'util';
 
 declare var require: any;
 const Boost = require('highcharts/modules/boost');
@@ -62,7 +63,9 @@ export class HighchartPlayerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.calculAttributs();
+    if (!isNullOrUndefined(this.attributes)) {
+      this.calculAttributs();
+    }
   }
 
   calculAttributs() {
