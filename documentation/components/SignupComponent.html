@@ -434,9 +434,9 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import {FormBuilder, FormGroup, Validators} from &quot;@angular/forms&quot;;
-import {AuthService} from &quot;../../services/auth.service&quot;;
-import {Router} from &quot;@angular/router&quot;;
+import {FormBuilder, Validators, FormGroup} from &#x27;@angular/forms&#x27;;
+import {AuthService} from &#x27;../../services/auth.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
 
 @Component({
   selector: &#x27;app-signup&#x27;,
@@ -468,7 +468,7 @@ export class SignupComponent implements OnInit {
     const password &#x3D; this.signUpForm.get(&#x27;password&#x27;).value;
     this.authService.createNewUser(email, password).then(
       () &#x3D;&gt; {
-        this.router.navigate([&#x27;/players&#x27;]);
+        this.router.navigate([&#x27;players&#x27;]);
       },
       (error) &#x3D;&gt; {
         this.errorMessage &#x3D; error;

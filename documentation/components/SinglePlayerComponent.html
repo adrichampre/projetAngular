@@ -278,8 +278,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="57"
-                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:57</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:51</a></div>
                 </td>
             </tr>
 
@@ -348,8 +348,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="65"
-                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:65</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:59</a></div>
                 </td>
             </tr>
 
@@ -418,8 +418,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="44"
-                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:44</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:41</a></div>
                 </td>
             </tr>
 
@@ -457,8 +457,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="49"
-                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:49</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:43</a></div>
                 </td>
             </tr>
 
@@ -496,8 +496,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="53"
-                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:53</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/player-list/single-player/single-player.component.ts:47</a></div>
                 </td>
             </tr>
 
@@ -637,6 +637,7 @@ export class SinglePlayerComponent implements OnInit {
               private router: Router) {
     const id &#x3D; this.route.snapshot.params.id;
     this.player &#x3D; new Player(id);
+    this.player.attributes &#x3D; new Player_attributes();
 
     this.playersService.getSinglePlayer(+id).then(
       (player: Player) &#x3D;&gt; {
@@ -648,20 +649,13 @@ export class SinglePlayerComponent implements OnInit {
     );
 
     this.playersService.getAttributesPlayer(+id).then(
-      // tslint:disable-next-line:variable-name
-      (player_attributes: Player_attributes) &#x3D;&gt; {
-        this.player.attributes &#x3D; player_attributes;
+      (attributes: Player_attributes) &#x3D;&gt; {
+        this.player.attributes &#x3D; attributes;
       }
     );
   }
 
-
-
-
-  ngOnInit() {
-
-  }
-
+  ngOnInit() {}
 
   onBack() {
     this.router.navigate([&#x27;/players&#x27;]);
@@ -693,7 +687,6 @@ export class SinglePlayerComponent implements OnInit {
           res &#x3D; &#x27;#43800D&#x27;;
         }
       }
-
     }
     return res;
   }

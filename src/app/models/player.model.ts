@@ -3,35 +3,61 @@ import {isEmpty} from 'rxjs/operators';
 import {isEmptyExpression} from '@angular/compiler';
 import {isNullOrUndefined} from 'util';
 
+/**
+ * Classe Player représentant un joueur
+ */
 export class Player {
 
   // tslint:disable-next-line:variable-name
+  /**
+   * Attributs d'un joueur
+   */
   private _attributes: Player_attributes;
+  /**
+   * Identifiant du joueur
+   */
   private _id: number;
+  /**
+   * Nom du joueur
+   */
   private _player_name: string;
+  /**
+   * Date d'anniversaire
+   */
   private _birthday: Date;
+  /**
+   * Taille
+   */
   private _height: number;
+  /**
+   * Identifiant api
+   */
   private _player_api_id: number;
+  /**
+   *Identifiant fifa
+   */
   private _player_fifa_api_id: number;
+  /**
+   * Poids
+   */
   private _weight: number;
+  /**
+   * Url d'une image attribuée
+   */
   private _img: string;
+  /**
+   * Age
+   */
   private _age: number;
 
-
+  /**
+   * Constructeur de l'objet
+   *
+   * @param id numero du joueur à créer
+   */
   constructor(id: number) {
     this._id = id;
   }
-
-  /*constructor(id: number, player_name: string, birthday: Date, height: number, player_api_id: number, player_fifa_api_id: number, weight: number) {
-    /*this._id = id;
-    this._player_name = player_name;
-    this._birthday = birthday;
-    this._height = height;
-    this._player_api_id = player_api_id;
-    this._player_fifa_api_id = player_fifa_api_id;
-    this._weight = weight;
-    this._img = "https://svgsilh.com/svg_v2/2130591.svg";
-  }*/
 
   get attributes(): Player_attributes {
     return this._attributes;

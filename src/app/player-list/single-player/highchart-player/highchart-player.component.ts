@@ -58,9 +58,7 @@ export class HighchartPlayerComponent implements OnInit {
 
   };
 
-  constructor() {
-
-  }
+  constructor() {}
 
   ngOnInit() {
     if (!isNullOrUndefined(this.attributes)) {

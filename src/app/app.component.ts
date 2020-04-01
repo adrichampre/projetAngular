@@ -7,6 +7,9 @@ import * as firebase from 'firebase';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  /**
+   * Titre de l'application
+   */
   title = 'angularBI';
 
   constructor() {

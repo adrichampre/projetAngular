@@ -150,7 +150,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/app.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -193,10 +193,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/app.component.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Titre de l&#39;application</p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -215,19 +221,26 @@ import * as firebase from &#x27;firebase&#x27;;
   styleUrls: [&#x27;./app.component.scss&#x27;]
 })
 export class AppComponent {
+  /**
+   * Titre de l&#x27;application
+   */
   title &#x3D; &#x27;angularBI&#x27;;
+
   constructor() {
-    var firebaseConfig &#x3D; {
-      apiKey: &quot;AIzaSyAMPkOtNIkMHQeiXW0ceRjcs-rrks736iw&quot;,
-      authDomain: &quot;angularbi-58498.firebaseapp.com&quot;,
-      databaseURL: &quot;https://angularbi-58498.firebaseio.com&quot;,
-      projectId: &quot;angularbi-58498&quot;,
-      storageBucket: &quot;angularbi-58498.appspot.com&quot;,
-      messagingSenderId: &quot;1057787956487&quot;,
-      appId: &quot;1:1057787956487:web:8d294956c53809dd7009a2&quot;
+    const firebaseConfig &#x3D; {
+      apiKey: &#x27;AIzaSyAMPkOtNIkMHQeiXW0ceRjcs-rrks736iw&#x27;,
+      authDomain: &#x27;angularbi-58498.firebaseapp.com&#x27;,
+      databaseURL: &#x27;https://angularbi-58498.firebaseio.com&#x27;,
+      projectId: &#x27;angularbi-58498&#x27;,
+      storageBucket: &#x27;angularbi-58498.appspot.com&#x27;,
+      messagingSenderId: &#x27;1057787956487&#x27;,
+      appId: &#x27;1:1057787956487:web:8d294956c53809dd7009a2&#x27;
     };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+
   }
 }
 </code></pre>

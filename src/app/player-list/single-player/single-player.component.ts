@@ -38,9 +38,7 @@ export class SinglePlayerComponent implements OnInit {
     );
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   onBack() {
     this.router.navigate(['/players']);

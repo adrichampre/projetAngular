@@ -190,7 +190,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:58</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:59</a></div>
                             </td>
                         </tr>
 
@@ -216,7 +216,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:23</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -252,8 +252,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="68"
-                            class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:68</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:69</a></div>
                 </td>
             </tr>
 
@@ -291,8 +291,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="64"
-                            class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:64</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:63</a></div>
                 </td>
             </tr>
 
@@ -373,7 +373,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -399,7 +399,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/player-list/single-player/highchart-player/highchart-player.component.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -415,6 +415,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
 import * as Highcharts from &#x27;highcharts&#x27;;
 import {Player_attributes} from &#x27;../../../models/player_attributes&#x27;;
+import {isNullOrUndefined} from &#x27;util&#x27;;
 
 declare var require: any;
 const Boost &#x3D; require(&#x27;highcharts/modules/boost&#x27;);
@@ -471,12 +472,12 @@ export class HighchartPlayerComponent implements OnInit {
 
   };
 
-  constructor() {
-
-  }
+  constructor() {}
 
   ngOnInit() {
-    this.calculAttributs();
+    if (!isNullOrUndefined(this.attributes)) {
+      this.calculAttributs();
+    }
   }
 
   calculAttributs() {

@@ -201,8 +201,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/services/players.service.ts:54</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/services/players.service.ts:42</a></div>
                 </td>
             </tr>
 
@@ -467,18 +467,6 @@ export class PlayersService {
         );
       })
     );
-    /*return new Promise(
-      ((resolve, reject) &#x3D;&gt; {
-        firebase.database().ref(&#x27;/players/&#x27; +  id.toString()).once(&#x27;value&#x27;).then(
-          (data) &#x3D;&gt; {
-            resolve(data.val());
-          },
-          (error) &#x3D;&gt; {
-            reject(error);
-          }
-        );
-      })
-    );*/
   }
 
   getAttributesPlayer(id: number) {
@@ -494,18 +482,6 @@ export class PlayersService {
         );
       })
     );
-    /*return new Promise(
-      ((resolve, reject) &#x3D;&gt; {
-        firebase.database().ref(&#x27;/player_attributes/&#x27; +  id.toString()).once(&#x27;value&#x27;).then(
-          (data) &#x3D;&gt; {
-            resolve(data.val());
-          },
-          (error) &#x3D;&gt; {
-            reject(error);
-          }
-        );
-      })
-    );*/
   }
 
 }
